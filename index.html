@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calendar</title>
+</head>
+<body>
+    <div class="calendar-wrapper border rounded flex justify-center items-center flex-col border-stone-400 fixed top-1/2 left-1/2 w-[300px] h-[400px] -translate-x-1/2 -translate-y-1/2">
+        <h1 class="title text-xl font-bold mt-2 mb-4">Calendar</h1>
+        <div class="control-block w-[100%] px-8 flex items-center justify-between mb-2">
+            <button id="prev" class="prev w-[30px] h-[30px] border rounded ring-1 ring-blue-500 flex justify-center items-center hover:bg-gray-100">
+                <img src="/arrow-right-tiny.svg" alt="" style="transform: rotate(180deg);">
+            </button>
+            <span class="year text-xl font-medium text-neutral-700"></span>
+            <button id="next" class="next w-[30px] h-[30px] border rounded ring-1 ring-blue-500 flex justify-center items-center hover:bg-gray-100">
+                <img src="/arrow-right-tiny.svg" alt="">
+            </button>
+        </div>
+        <p class="month font-semibold"></p>
+        <div id="cal" class="calendar w-[90%] h-[100%] m-2"></div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
